@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VerbaShot</title>
+
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <main class="container">
+
+    <header>
+      <h1>VerbaShot</h1>
+      <p class="subtitle">Capture. Report. Localize.</p>
+    </header>
+
+    <section class="project-section">
+      <label for="project">Active project</label>
+
+      <select id="project">
+        <option value="">Select a project</option>
+        <option value="demo">Website QA - Demo</option>
+      </select>
+    </section>
+
+    <section class="capture-section">
+      <h2>Screenshot</h2>
+
+      <button id="capture-btn" type="button">
+        Capture Screenshot
+      </button>
+
+      <p id="status" role="status">
+        Ready to capture
+      </p>
+    </section>
+
+    <footer>
+      <p>VerbaShot v0.1.0</p>
+    </footer>
+
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

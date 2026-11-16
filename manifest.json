@@ -1,0 +1,15 @@
+
+{
+  "manifest_version": 3,
+  "name": "VerbaShot",
+  "version": "0.1.0",
+  "description": "Screenshot assistant for Localization QA.",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_title": "VerbaShot"
+  }
+}

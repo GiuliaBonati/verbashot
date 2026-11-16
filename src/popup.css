@@ -1,0 +1,143 @@
+
+/* ========================================
+   VerbaShot — Popup Styles
+   Version: 0.1.0
+======================================== */
+
+/* Design tokens */
+:root {
+  --primary: #253b55;
+  --primary-hover: #344f70;
+  --background: #f4f6fa;
+  --surface: #ffffff;
+  --text: #253b55;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
+  --success: #16805d;
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  padding: 16px;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/* Main container */
+.container {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  margin-bottom: 24px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+/* Project selector */
+select {
+  width: 100%;
+  padding: 12px;
+  background-color: #f8fafc;
+  color: var(--text);
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+select:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Capture button */
+#capture-btn {
+  width: 100%;
+  padding: 14px 16px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#capture-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+#capture-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+#capture-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status message */
+#status {
+  margin: 12px 0 0;
+  color: var(--success);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 11px;
+}
